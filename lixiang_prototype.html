@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LIXIANG Prototype</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+* {margin:0; padding:0; box-sizing:border-box; font-family:'Inter', sans-serif;}
+body {background:#111; color:#fff;}
+
+header {
+position:fixed;
+top:0;
+width:100%;
+height:80px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:0 60px;
+background:rgba(0,0,0,0.8);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+header nav a {
+margin:0 20px;
+text-decoration:none;
+color:#fff;
+font-weight:500;
+}
+
+.btn {
+padding:12px 28px;
+border-radius:24px;
+background:#fff;
+color:#000;
+font-weight:600;
+text-decoration:none;
+transition:0.3s;
+}
+
+.btn:hover {
+background:#e60012;
+color:#fff;
+}
+
+.hero {
+height:100vh;
+background:url('https://images.unsplash.com/photo-1619767886558-efdc7f9dd9fa') center/cover no-repeat;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:0 20px;
+}
+
+.hero h1 {
+font-size:72px;
+font-weight:800;
+margin-bottom:20px;
+}
+
+.hero p {
+font-size:22px;
+margin-bottom:40px;
+max-width:700px;
+}
+
+.section {
+padding:120px 80px;
+text-align:center;
+}
+
+.models {
+display:grid;
+grid-template-columns:repeat(auto-fit, minmax(300px,1fr));
+gap:40px;
+margin-top:60px;
+}
+
+.card {
+background:#1c1c1c;
+border-radius:20px;
+overflow:hidden;
+transition:0.4s;
+}
+
+.card img {
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.card h3 {
+margin:20px 0;
+font-size:28px;
+}
+
+.card:hover {
+transform:scale(1.05);
+}
+
+footer {
+background:#000;
+padding:60px;
+text-align:center;
+color:#888;
+}
+
+@media(max-width:768px){
+header {padding:0 20px;}
+.hero h1 {font-size:42px;}
+.hero p {font-size:18px;}
+.section {padding:80px 20px;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div style="font-weight:800; font-size:22px;">LIXIANG</div>
+<nav>
+<a href="#">Models</a>
+<a href="#">Technology</a>
+<a href="#">Stores</a>
+<a href="#">Community</a>
+</nav>
+<a href="#" class="btn">Test Drive</a>
+</header>
+
+<section class="hero">
+<h1>LIXIANG L9</h1>
+<p>Next-generation smart electric SUV built for families. Experience comfort, power and intelligent driving.</p>
+<a href="#" class="btn">Explore Now</a>
+</section>
+
+<section class="section">
+<h2 style="font-size:42px;">Our Models</h2>
+<div class="models">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1502877338535-766e1452684a">
+<h3>L7</h3>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1493238792000-8113da705763">
+<h3>L8</h3>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c">
+<h3>L9</h3>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1617788138017-80ad40651399">
+<h3>MEGA</h3>
+</div>
+</div>
+</section>
+
+<section class="section" style="background:#1c1c1c;">
+<h2 style="font-size:42px;">Advanced Technology</h2>
+<p style="max-width:700px; margin:30px auto; font-size:20px;">
+Equipped with intelligent driving systems, long-range electric performance and premium interior comfort.
+</p>
+<a href="#" class="btn">Learn More</a>
+</section>
+
+<footer>
+© 2026 LIXIANG Prototype Website — Designed for UI Concept Demonstration
+</footer>
+
+</body>
+</html>
